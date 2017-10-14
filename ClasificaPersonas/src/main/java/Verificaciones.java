@@ -36,13 +36,34 @@ public class Verificaciones {
         }
     }
 
-    // ojos rarunos
-    // tema 3 arrays
-
     /*
-    static String colorDeOjos(String color){
+     Dados una lista (array, arreglo, vector, blaublau...) de  ojos rarunos coteja con los ojos de la
+     persona para determinar si son "raros"
 
-    }
+     tema 3 arrays
+     refs:
+     https://stackoverflow.com/questions/8719012/using-an-array-in-a-do-while-statement
+     https://es.stackoverflow.com/questions/62695/recorrer-arreglo-java-eficientemente
     */
+    static String sonRarosTusOjos(String colorDeOjos){
 
+        String resultado = "hola";
+
+        String[] listaOjosRaros = new String[5];
+        listaOjosRaros[0] = "rojos";
+        listaOjosRaros[1] = "morados";
+        listaOjosRaros[2] = "blancos";
+        listaOjosRaros[3] = "blau";
+        listaOjosRaros[4] = "amarillos";
+
+        /*
+        for ( colorDeOjos : listaOjosRaros ){
+            if ( colorDeOjos == listaOjosRaros[]){
+                resultado = "";
+                return resultado;
+            }
+        }
+        */
+        return resultado;
+    }
 }

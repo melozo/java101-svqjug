@@ -28,7 +28,7 @@ class Personas {
 
         // es el objeto mayor de edad?
 
-        if (Verificaciones.edad(carmelo.Edad) == true){
+        if (Verificaciones.edad(carmelo.Edad)){
             System.out.println("Es mayorcete!");
         } else {
             System.out.println("Ja!, no se lo cree ni el");
@@ -45,6 +45,18 @@ class Personas {
 
         // son raretes los ojos del objeto?
         // tema 3 arrays
+        System.out.println(carmelo.Nombre + " tiene los ojos " + carmelo.ColorDeOjos);
+        System.out.println("¿Es raro el color de sus ojos?");
+        //Verificaciones.sonRarosTusOjos(carmelo.ColorDeOjos);
+        if (Verificaciones.sonRarosTusOjos(carmelo.ColorDeOjos) == "hola"){
+            System.out.println("Dice que hola :-¿?");
+            /*
+            TODO: me gustaría mostrar/saber que viene de la función para poder verificar, si es un string, int, etc..
+             */
+        } else {
+            System.out.println("No sabemos que vuelve de la función");
+        }
+
 
     }
 }

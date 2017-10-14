@@ -9,7 +9,7 @@ public class Verificaciones {
 
     // edad
     static boolean edad(int edad) {
-        if (edad > 18){
+        if (edad > 18) {
             return true;
         } else {
             return false;
@@ -17,8 +17,8 @@ public class Verificaciones {
     }
 
     // altura
-    static boolean altura(float f){
-        if (f >= 1.65 ){
+    static boolean altura(float f) {
+        if (f >= 1.65) {
             return true;
         } else {
             return false;
@@ -27,9 +27,9 @@ public class Verificaciones {
 
     // indice de grasa!, juas
     // esto es una mierda y mentira
-    static boolean grasa(float altura, float peso){
+    static boolean grasa(float altura, float peso) {
         float calculoGrasaCorporal = altura * peso;
-        if ( (peso % altura) > calculoGrasaCorporal ){
+        if ((peso % altura) > calculoGrasaCorporal) {
             return true;
         } else {
             return false;
@@ -45,9 +45,7 @@ public class Verificaciones {
      https://stackoverflow.com/questions/8719012/using-an-array-in-a-do-while-statement
      https://es.stackoverflow.com/questions/62695/recorrer-arreglo-java-eficientemente
     */
-    static String sonRarosTusOjos(String colorDeOjos){
-
-        String resultado = "hola";
+    static String sonRarosTusOjos(String colorDeOjos) {
 
         String[] listaOjosRaros = new String[5];
         listaOjosRaros[0] = "rojos";
@@ -56,6 +54,17 @@ public class Verificaciones {
         listaOjosRaros[3] = "blau";
         listaOjosRaros[4] = "amarillos";
 
+
+        for (String color : listaOjosRaros) {
+            if (listaOjosRaros.equals(colorDeOjos)) {
+//                System.out.println("Tus ojos son raretes :-)");
+                return "raros";
+            } else {
+                return "normales";
+            }
+        }
+
+        return "nada2";
         /*
         for ( colorDeOjos : listaOjosRaros ){
             if ( colorDeOjos == listaOjosRaros[]){
@@ -64,6 +73,5 @@ public class Verificaciones {
             }
         }
         */
-        return resultado;
     }
 }

@@ -24,7 +24,7 @@ class Personas {
         carmelo.Edad = 35;
         carmelo.Peso = 78;
         carmelo.Altura = (float) 1.95; // ja!
-        carmelo.ColorDeOjos = "Verdes";
+        carmelo.ColorDeOjos = "Verdes".toLowerCase();
 
         // es el objeto mayor de edad?
 
@@ -53,10 +53,19 @@ class Personas {
             /*
             TODO: me gustaría mostrar/saber que viene de la función para poder verificar, si es un string, int, etc..
              */
+        } else if (Verificaciones.sonRarosTusOjos(carmelo.ColorDeOjos) == "nada2") {
+            System.out.println("No sabemos que vuelve de la función");
         } else {
             System.out.println("No sabemos que vuelve de la función");
         }
-
-
+        // llamamos a la función pasando un argumento
+        // ver si podemos devolvernos  Strings
+        if (Verificaciones.sonRarosTusOjos(carmelo.ColorDeOjos) == "raros") {
+            System.out.println("ei, pasa algo");
+        } else if (Verificaciones.sonRarosTusOjos(carmelo.ColorDeOjos) == "normales") {
+            System.out.println("normales... del monton");
+        } else {
+            System.out.println("No hay match entre las cadenas");
+        }
     }
 }

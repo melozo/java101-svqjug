@@ -19,7 +19,7 @@ public class DiceGame {
         // System.out.println(turno.getRandom());
         System.out.println("Who...");
 
-        // Determine who start 1 = Pep, 2 = Machine
+        // Determine who start turno = Pep, 2 = Machine
         if (turno.getRandom() == 1){
             System.out.println("Pep, start!");
             Pep.setTurn(true);
@@ -30,6 +30,12 @@ public class DiceGame {
 
         System.out.println(Maquina.name + " ¿ have you the turn ? " + Maquina.getTurn());
         System.out.println(Pep.name + " ¿ have you the turn ? " + Pep.getTurn());
+
+        /*
+            Comenzamos a jugar
+        */
+        int randomNum = (int) (Math.random() * 25);
+        System.out.println(randomNum);
 
     }
 }

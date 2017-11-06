@@ -3,6 +3,7 @@ public class Player {
     public String name;
     private boolean turn;
     private int countWin = 0;
+    public int rollResult;
 
     // Set who have the turn to start
     void setTurn(boolean turn){
